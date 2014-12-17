@@ -14,22 +14,25 @@
 //Homepage to BiteMeBouquet
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('index');
 });
 
-//Custom Order page to add a custom bouquet (includes fruit type, arrangement, etc)
+//Custom Order page to edit order to customer liking
 Route::get('/custom', function() {
 
+	return 'Customize your order here';
 });
 
 //Custom Order POST to confirm customized order
 Route::post('/custom', function() {
 
+	return 'Customized order shown here!';
 });
 
 //Bouquet Showcase/ search results
-Route::get('/bouquet/?query={query?}', function() {
+Route::get('/bouquet', function() {
 
+	return View::make('bouquet');
 });
 
 //ABOUT US, FAQ page
@@ -93,21 +96,9 @@ Route::post('/logout', function() {
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
 //Different bouquet types including a particular type of fruit
-Route::get('/bouquets/{type}', function($type) {
-	return 'Here are the beautiful bouquets that include '.$type;
+Route::get('/bouquets/{type?}', function($type) {
+	return 'Here are the beautiful bouquets that include';
 });
 
 Route::get('/new', function() {
