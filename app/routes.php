@@ -20,7 +20,7 @@ Route::get('/', function()
 //Custom Order page to edit order to customer liking
 Route::get('/custom', function() {
 
-	return 'Customize your order here';
+	return View::make('custom');
 });
 
 //Custom Order POST to confirm customized order
@@ -29,7 +29,7 @@ Route::post('/custom', function() {
 	return 'Customized order shown here!';
 });
 
-//Bouquet Showcase/ search results
+//Bouquet Product Page/ search results
 Route::get('/bouquet', function() {
 
 	return View::make('bouquet');
@@ -38,62 +38,62 @@ Route::get('/bouquet', function() {
 //ABOUT US, FAQ page
 Route::get('/about', function() {
 
+	return View::make('about');
 });
 
 
 //Feedback form
 Route::get('/feedback', function() {
 
+	return View::make('feedback');
 });
 
 //Process Feedback form with POST
 Route::post('/feedback', function() {
 
+	return 'FEEDBACK FORM SUBMITTED!!';
 });
 
 //Add products to shopping cart
 Route::get('/cart', function() {
 
+	return View::make('cart');
 });
 
 //Shopping cart edit
-Route::get('/cart', function() {
+Route::post('/cart', function() {
 
+	return 'YOU EDITED YOUR CART!';
 });
 
-//Order placed
+//Order placed successfully
 Route::get('/success', function() {
 
+	return View::make('success');
 });
 
 //User Signup Page
 Route::get('/signup', function() {
 
+	return View::make('signup');
 });
 
 //user signup processed/confirmation
 Route::post('/signup', function() {
 
+	return 'User successfully signed up!';
 });
 
-//User Login
+//User Login FORM
 Route::get('/login', function() {
 
+	return View::make('login');
 });
 
 //Process Login
 Route::post('/login', function() {
 
-});
-
-//User Logout
-Route::get('/logout', function() {
-
-});
-
-//process logout
-Route::post('/logout', function() {
-
+	return 'Logged in successfully!';
 });
 
 //Different bouquet types including a particular type of fruit

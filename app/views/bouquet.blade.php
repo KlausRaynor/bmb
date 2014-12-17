@@ -6,7 +6,7 @@ Bouquet Search
 
 
 @section('content')
-<h1> List of all Bouquets</h1>
+<h3> List of all Bouquets</h3>
 
 Search Bouquets: <input type='text'>
 @stop

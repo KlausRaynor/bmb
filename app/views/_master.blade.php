@@ -13,8 +13,8 @@ ini_set('display_errors', 1);
 
     <meta charset='utf-8'>
 
-
-    	<!--Imports style sheet from public folder-->
+    
+    <!--Imports style sheet from public folder-->
 	{{ HTML::style('css/style.css'); }}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -24,12 +24,15 @@ ini_set('display_errors', 1);
 </head>
 <body>
 
-	<center><img class=banner src='/images/logo_img.jpg' alt='Bite Me Bouquet Logo'></center>
+	<img class=banner src='/images/logo_img.jpg' alt='Bite Me Bouquet Logo'>
 
    @yield('content')
 
-
+<div id='footer'>
+<a class='center' href="https://twitter.com/bitemebouquet" ><img src='/images/PNG/twitter.png' alt="Come follow us on twitter!"></a>
+<a class='center' href="https://www.facebook.com/pages/Bite-Me-Bouquet/362499124162" ><img src='/images/PNG/facebook.png' alt="Check out our facebook!"></a>
+<a class='center' href="http://bitemebouquet.tumblr.com/" ><img src='/images/PNG/tumblr.png' alt="Follow our Tumblr page!"></a>
    @yield('footer')
-
+</div>
 </body>
 </html>
