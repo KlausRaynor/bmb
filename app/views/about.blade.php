@@ -10,6 +10,6 @@ About Us
 	Bite Me Bouquet helps you design fun and creative arrangements for any special occasion 
 	from holidays, birthdays, graduations, anniversaries, weddings, family gatherings, 
 	and business events. Our options are unlimited and will make a great addition to any event.
-	Our quality assures you the freshest, sweetest and most delicious fruits.
+	Our quality assures you the freshest, sweetest, and most delicious fruits.
 	</div>
 @stop

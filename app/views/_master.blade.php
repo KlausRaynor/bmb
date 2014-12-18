@@ -31,7 +31,7 @@ ini_set('display_errors', 1);
 <div id='footer'>
 
    <!-- MAYBE UNNECESSARY?@yield('footer')-->
-   <p id='footer_floor'>&copy;Bite Me Bouquet, LLC. All rights reserved.</p>
+
 <span class='social'>
 <a class='center' href="https://twitter.com/bitemebouquet" ><img src='/images/iso-white/twitter-iso-white.png' alt="Come follow us on twitter!"></a>
 </span>
@@ -45,7 +45,7 @@ ini_set('display_errors', 1);
 <a class='center' href="http://bitemebouquet.tumblr.com/" ><img src='/images/iso-white/tumblr-iso-white.png' alt="Follow our Tumblr page!"></a>
 </span>
    @yield('footer')
-<p id='copyright'>&copy;Bite Me Bouquet, LLC. All Rights Reserved.</p>
+<p id='copyright'>&copy;2014 Bite Me Bouquet, LLC. All rights reserved.</p>
 
 </div>
 </body>

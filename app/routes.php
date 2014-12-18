@@ -116,6 +116,21 @@ Route::post('/new', function() {
 	print_r($input);
 });
 
+
+/*****BELOW ARE ROUTES FOR TESTING PURPOSES ONLY*****/
 Route::get('practice', function() {
 	echo App::environment();
+});
+
+
+//TEST ROUTE FOR ENVIRONMENT
+Route::get('/get-environment', function() {
+
+	echo "Environment: " .App::environment();
+});
+
+//TEST ROUTE ERROR TRIGGER
+Route::get('/trigger-error', function() {
+	#NO FUBAR CLASS, WILL CREATE EXCEPTION
+	$foo = new Foobar;
 });
