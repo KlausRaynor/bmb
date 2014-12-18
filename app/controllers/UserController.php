@@ -64,7 +64,7 @@ class UserController extends BaseController {
     }
 
     public function getLogout() {
-        //return View::make('logout');
+        return View::make('logout');
     }
 
 }

@@ -12,21 +12,50 @@
 	<div class='error'>{{ $message }}</div>
 @endforeach
 
-<form method='POST' action='/signup'>
-	<label for'signup'>First Name:</label>
-		<input type="text" name="first_name">
-	<label for'signup'>Last Name:</label>
-		<input type="text" name="last_name">	
-	<label for'signup'>Email:</label>
-		<input type="text" name="email">
-	<label for'signup'>Password:</label>
-		<input type="password" name="password">
-
-		<input type="submit">
+<!--BOOTSTRAP HORIZONTAL FORM CODE-->
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="signup" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputFName" placeholder="James">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="signup" class="col-sm-2 control-label">Last Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputLName" placeholder="Raynor">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="signup" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputEmail" placeholder="ThisIsJimmy@battle.net">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
 </form>
 
 <p>Already registered?</p>
-<a class='btn btn-default' href='login'>Login</a>
+<p><a class='btn btn-default' href='login'>Login</a></p>
 </div>
 
 

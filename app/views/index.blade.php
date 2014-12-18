@@ -13,15 +13,10 @@ Bite Me Bouquet
 	<h3>Welcome To Bite Me Bouquet!</h3>
 </div>
 	<div id='content'>
-		<p>Founded in 2011, Bite Me Bouquet has continued to be innovative in it's approach to customizable edible and floral arrangements.  
+		<p>Founded in 2011, Bite Me Bouquet has continued to be innovative in its approach to customizable edible and floral arrangements.  
 			From baby showers to birthdays, weddings and special occasions, Bite Me Bouquet has delicious and eye-catching bouquets for your next event!
 		</p>
-	
-
-		<div id='centered_options' class='btn-group' role='group' aria-label='HomePage Buttons'>
-			<a class='btn btn-default' href='login'>Login</a>
-			<a class='btn btn-default' href='signup'>Sign Up</a>
-			<a class='btn btn-default' href='bouquet'>Browse</a>
-		</div>
+		<p><a class='btn btn-default' href='bouquet'>Browse</a></p>
 	</div>	
+	
 @stop

@@ -29,6 +29,24 @@ ini_set('display_errors', 1);
   @endif
 	<img class=banner src='/images/logo_img.jpg' alt='Bite Me Bouquet Logo'>
 
+  <nav>
+    <ul>
+    @if(Auth::check())
+      <li><a href='/logout'>Log out {{ Auth::user()->email; }}</a></li>
+      <li><a href='/bouquet'>All Books</a></li>
+      <li><a href='/book/search'>Search Books (w/ Ajax)</a></li>
+      <li><a href='/tag'>All Tags</a></li>
+      <li><a href='/book/create'>+ Add Book</a></li>
+      <li><a href='/debug/routes'>Routes</a></li>
+    @else
+      <div class='btn-group' role='group' aria-label='HomePage Buttons'>
+        <a class='btn btn-default' href='login'>Login</a>
+        <a class='btn btn-default' href='signup'>Sign Up</a>
+        
+    </div>
+    @endif
+    </ul>
+  </nav>
    @yield('content')
 
 <div id='footer'>
