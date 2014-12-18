@@ -38,7 +38,7 @@ ini_set('display_errors', 1);
 <span class='social'>
 <a class='center' href="http://instagram.com/bitemebouquet" ><img src='/images/iso-white/instagram-iso-white.png' alt="Like us on Instagram!"></a>
 </span>
-<span>class='social'>
+<span class='social'>
 <a class='center' href="http://bitemebouquet.tumblr.com/" ><img src='/images/iso-white/tumblr-iso-white.png' alt="Follow our Tumblr page!"></a>
 </span>
    @yield('footer')
