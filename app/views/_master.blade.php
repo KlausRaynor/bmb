@@ -31,9 +31,10 @@ ini_set('display_errors', 1);
 <div id='footer'>
 <a class='center' href="https://twitter.com/bitemebouquet" ><img src='/images/iso-white/twitter-iso-white.png' alt="Come follow us on twitter!"></a>
 <a class='center' href="https://www.facebook.com/pages/Bite-Me-Bouquet/362499124162" ><img src='/images/iso-white/facebook-iso-white.png' alt="Check out our facebook!"></a>
-<a class='center' href="http://bitemebouquet.tumblr.com/" ><img src='/images/iso-white/tumblr-iso-white.png' alt="Follow our Tumblr page!"></a>
 <a class='center' href="http://instagram.com/bitemebouquet" ><img src='/images/iso-white/instagram-iso-white.png' alt="Like us on Instagram!"></a>
+<a class='center' href="http://bitemebouquet.tumblr.com/" ><img src='/images/iso-white/tumblr-iso-white.png' alt="Follow our Tumblr page!"></a>
    @yield('footer')
+<p id='copyright'>&copy;Bite Me Bouquet, LLC. All Rights Reserved.</p>
 </div>
 </body>
 </html>
