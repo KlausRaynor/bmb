@@ -21,7 +21,7 @@ p, h3{
 
 #title {
 	text-align: center;
-	font-family: 'Dancing Script', cursive, ARIAL;
+	font-family: ARIAL;
 }
 
 #footer_floor{
@@ -66,3 +66,13 @@ p, h3{
 	margin-right: 5px;
 }
 
+.flash-message {
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#CC6666;
+	text-align:center;
+	color:white;
+	padding:5px;
+}

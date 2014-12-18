@@ -34,6 +34,7 @@ ini_set('display_errors', 1);
     @if(Auth::check())
       <li><a href='/logout'>Log out {{ Auth::user()->email; }}</a></li>
       <li><a href='/bouquet'>All Books</a></li>
+      <li><a href='/cart'>View Cart</a></li>
       <li><a href='/book/search'>Search Books (w/ Ajax)</a></li>
       <li><a href='/tag'>All Tags</a></li>
       <li><a href='/book/create'>+ Add Book</a></li>

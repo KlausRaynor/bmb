@@ -12,8 +12,23 @@
 	<div class='error'>{{ $message }}</div>
 @endforeach
 
+
+
+{{ Form::open(array('url' => '/signup')) }}
+
+ <p>   Email
+    {{ Form::text('email') }}<br><br>
+
+    Password:
+    {{ Form::password('password') }}<br><br>
+
+    {{ Form::submit('Submit') }}</p>
+
+
 <!--BOOTSTRAP HORIZONTAL FORM CODE-->
-<form class="form-horizontal" role="form">
+
+<!--
+<form class="form-horizontal" role="form" method='POST' action='/signup'>
   <div class="form-group">
     <label for="signup" class="col-sm-2 control-label">First Name</label>
     <div class="col-sm-10">
@@ -52,10 +67,7 @@
       <button type="submit" class="btn btn-default">Sign in</button>
     </div>
   </div>
-</form>
-
-<p>Already registered?</p>
-<p><a class='btn btn-default' href='login'>Login</a></p>
+</form> -->
 </div>
 
 

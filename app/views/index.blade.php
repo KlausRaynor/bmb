@@ -16,7 +16,10 @@ Bite Me Bouquet
 		<p>Founded in 2011, Bite Me Bouquet has continued to be innovative in its approach to customizable edible and floral arrangements.  
 			From baby showers to birthdays, weddings and special occasions, Bite Me Bouquet has delicious and eye-catching bouquets for your next event!
 		</p>
-		<p><a class='btn btn-default' href='bouquet'>Browse</a></p>
+		<p>
+			<a class='btn btn-default' href='bouquet'>Browse</a><br><br>
+			<a class='btn btn-default' href='about'>About Us</a>
+		</p>
 	</div>	
-	
+
 @stop

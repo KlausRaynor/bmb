@@ -7,10 +7,22 @@
 @section('content')
 <div id='content'>
 
+<!-- PHP Form
 
+<p>
+    {{ Form::label('email') }}
+    {{ Form::text('email') }}<br>
+
+    {{ Form::label('password') }} 
+    {{ Form::password('password') }}<br><br>
+
+    {{ Form::submit('Submit') }}
+</p>
+-->
 
 <!--BOOTSTRAP HORIZONTAL FORM CODE-->
-<form class="form-horizontal" role="form" method='POST' action='/login'>
+
+{{ Form::open(array('url' => '/login')) }}
   <div class="form-group">
     <label for="signup" class="col-sm-2 control-label">Email</label>
     <div class="col-sm-10">
@@ -38,7 +50,6 @@
     </div>
   </div>
 </form>
-<p>New User? </p>
-	<p><a class='btn btn-default' href='signup'>Sign Up</a></p>
+ {{ Form::close() }}
 </div>
 @stop

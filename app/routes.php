@@ -82,26 +82,6 @@ Route::post('/login', 'UserController@postLogin');
 #logout
 Route::get('/logout', 'UserController@getLogout');
 
-//user signup processed/confirmation
-Route::post('/signup', function() {
-
-	return 'User successfully signed up!';
-});
-
-Route::get('/login', 'UserController@getLogin');
-//User Login FORM COMMENTED OUT
-/*
-Route::get('/login', function() {
-
-	return View::make('login');
-});
- */
-//Process Login
-Route::post('/login', function() {
-
-	return 'Logged in successfully!';
-});
-
 //Different bouquet types including a particular type of fruit
 Route::get('/bouquets/{type?}', function($type) {
 	return 'Here are the beautiful bouquets that include';
