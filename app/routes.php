@@ -75,6 +75,26 @@ Route::get('/success', function() {
 //User Signup Page
 Route::get('/signup', function() {
 
+  $user = User::create(array(
+  'username' => 'KlausRaynor',
+  'first_name' => 'Klaus',
+  'last_name' => 'Holder',
+  'email' => 'kholder@g.harvard.edu',
+  'password' => 'qwerty'
+));
+
+  $faker = Faker\Factory::create();
+ 
+for ($i = 0; $i < 10; $i++)
+{
+  $user = User::create(array(
+    'username' => $faker->userName,
+    'first_name' => $faker->firstName,
+    'last_name' => $faker->lastName,
+    'email' => $faker->email,
+    'password' => $faker->word
+  ));
+}
 	return View::make('signup');
 });
 
@@ -194,5 +214,81 @@ Route::get('/debug', function() {
     }
 
     echo '</pre>';
+
+});
+
+//CRUD CREATING ROUTE
+
+Route::get('/practice-creating', function() {
+
+	#Instantiate Object
+	$bouquet = new Bouquet();
+
+	#set values
+	$bouquet->name = "Fruit Cone";
+	$bouquet->price = 3;
+	$bouquet->image = "/images/cone.jpg";
+	$bouquet->add_to_cart = "";
+
+	$bouquet->save();
+
+	return 'New bouquet added to your database!';
+});
+
+//CRUD READING ROUTE
+Route::get('/practice-reading', function() {
+	$bouquets = Bouquet::all();
+
+	if($bouquets->isEmpty() != TRUE) {
+
+		foreach($bouquets as $bouquet) {
+
+			echo $bouquet->name.'<br>';
+		}
+	} else {
+		return 'No bouquets found';
+	}
+});
+
+
+//CRUD UPDATING ROUTE
+Route::get('/practice-updating', function() {
+
+  
+    $bouquet = Bouquet::where('name', 'LIKE', '%Fruit%')->first();
+
+
+    if($bouquet) {
+
+     
+        $bouquet->name = 'Sweet Fruit Cone';
+
+   
+        $bouquet->save();
+
+        return "Update complete; check the database to see if your update worked...";
+    }
+    else {
+        return "Bouquet not found, can't update.";
+    }
+
+});
+
+#CRUD DELETING ROUTE
+Route::get('/practice-deleting', function() {
+
+ 
+    $bouquet = Bouquet::where('name', 'LIKE', '%Fruit%')->first();
+
+    if($bouquet) {
+
+        $bouquet->delete();
+
+        return "Deletion complete; check the database to see if it worked...";
+
+    }
+    else {
+        return "Can't delete - Bouquet not found.";
+    }
 
 });
