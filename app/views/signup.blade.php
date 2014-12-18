@@ -24,5 +24,10 @@
 
 		<input type="submit">
 </form>
+
+<p>Already registered?</p>
+<a class='btn btn-default' href='login'>Login</a>
 </div>
+
+
 @stop

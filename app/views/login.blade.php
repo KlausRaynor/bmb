@@ -16,5 +16,8 @@
 
 		<input type="submit">
 </form>
+
+<p>New User? </p>
+	<a class='btn btn-default' href='signup'>Sign Up</a>
 </div>
 @stop

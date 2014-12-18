@@ -13,15 +13,16 @@ ini_set('display_errors', 1);
 
     <meta charset='utf-8'>
 
-  <!--Imports style sheet from public folder-->
-	{{ HTML::style('css/style.css'); }}
+ 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
+ <!--Imports style sheet from public folder-->
+  {{ HTML::style('css/style.css'); }}
     @yield('head')
 
 </head>
 <body>
-
+  <p>
+<a href='/'>Homepage</a> </p>
   <!--Error Reporting, production side -->
 @if(Session::get('flash_message'))
     <div class='flash-message'>{{ Session::get('flash_message') }}</div>
@@ -33,7 +34,7 @@ ini_set('display_errors', 1);
 <div id='footer'>
 
    <!-- MAYBE UNNECESSARY?@yield('footer')-->
-
+<p>
 <span class='social'>
 <a class='center' href="https://twitter.com/bitemebouquet" ><img src='/images/iso-white/twitter-iso-white.png' alt="Come follow us on twitter!"></a>
 </span>
@@ -45,7 +46,7 @@ ini_set('display_errors', 1);
 </span>
 <span class='social'>
 <a class='center' href="http://bitemebouquet.tumblr.com/" ><img src='/images/iso-white/tumblr-iso-white.png' alt="Follow our Tumblr page!"></a>
-</span>
+</span> </p>
    @yield('footer')
 <p id='copyright'>&copy;2014 Bite Me Bouquet, LLC. All rights reserved.</p>
 

@@ -19,9 +19,9 @@ Bite Me Bouquet
 	
 
 		<div id='centered_options' class='btn-group' role='group' aria-label='HomePage Buttons'>
-			<button type='button' class='btn btn-default'>Login</button>
-			<button type='button' class='btn btn-default'>Sign Up</button>
-			<button type='button' class='btn btn-default'>Browse</button>
+			<a class='btn btn-default' href='login'>Login</a>
+			<a class='btn btn-default' href='signup'>Sign Up</a>
+			<a class='btn btn-default' href='bouquet'>Browse</a>
 		</div>
 	</div>	
 @stop
