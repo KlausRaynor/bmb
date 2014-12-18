@@ -12,10 +12,7 @@
 */
 
 //Homepage to BiteMeBouquet
-Route::get('/', function()
-{
-	return View::make('index');
-});
+Route::get('/', 'IndexController@getIndex');
 
 //Custom Order page to edit order to customer liking
 Route::get('/custom', function() {
@@ -72,31 +69,18 @@ Route::get('/success', function() {
 	return View::make('success');
 });
 
-//User Signup Page
-Route::get('/signup', function() {
+//User Routing
 
-  $user = User::create(array(
-  'username' => 'KlausRaynor',
-  'first_name' => 'Klaus',
-  'last_name' => 'Holder',
-  'email' => 'kholder@g.harvard.edu',
-  'password' => 'qwerty'
-));
+#signup
+Route::get('/signup', 'UserController@getSignup');
+Route::post('signup', 'UserController@postSignup');
 
-  $faker = Faker\Factory::create();
- 
-for ($i = 0; $i < 10; $i++)
-{
-  $user = User::create(array(
-    'username' => $faker->userName,
-    'first_name' => $faker->firstName,
-    'last_name' => $faker->lastName,
-    'email' => $faker->email,
-    'password' => $faker->word
-  ));
-}
-	return View::make('signup');
-});
+#login
+Route::get('/login', 'UserController@getLogin');
+Route::post('/login', 'UserController@postLogin');
+
+#logout
+Route::get('/logout', 'UserController@getLogout');
 
 //user signup processed/confirmation
 Route::post('/signup', function() {
@@ -104,12 +88,14 @@ Route::post('/signup', function() {
 	return 'User successfully signed up!';
 });
 
-//User Login FORM
+Route::get('/login', 'UserController@getLogin');
+//User Login FORM COMMENTED OUT
+/*
 Route::get('/login', function() {
 
 	return View::make('login');
 });
-
+ */
 //Process Login
 Route::post('/login', function() {
 

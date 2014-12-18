@@ -6,6 +6,15 @@
 
 @section('content')
 <div id='content'>
-	Login to customize an order!
+
+
+<form method='POST' action='/login'>
+	<label for'signup'>Email:</label>
+		<input type="text" name="email">
+	<label for'signup'>Password:</label>
+		<input type="password" name="password">	
+
+		<input type="submit">
+</form>
 </div>
 @stop

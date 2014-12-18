@@ -13,17 +13,19 @@ ini_set('display_errors', 1);
 
     <meta charset='utf-8'>
 
-    
-    <!--Imports style sheet from public folder-->
+  <!--Imports style sheet from public folder-->
 	{{ HTML::style('css/style.css'); }}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
 
     @yield('head')
 
 </head>
 <body>
 
+  <!--Error Reporting, production side -->
+@if(Session::get('flash_message'))
+    <div class='flash-message'>{{ Session::get('flash_message') }}</div>
+  @endif
 	<img class=banner src='/images/logo_img.jpg' alt='Bite Me Bouquet Logo'>
 
    @yield('content')
