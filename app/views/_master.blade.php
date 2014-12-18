@@ -32,6 +32,7 @@ ini_set('display_errors', 1);
 <a class='center' href="https://twitter.com/bitemebouquet" ><img src='/images/PNG/twitter.png' alt="Come follow us on twitter!"></a>
 <a class='center' href="https://www.facebook.com/pages/Bite-Me-Bouquet/362499124162" ><img src='/images/PNG/facebook.png' alt="Check out our facebook!"></a>
 <a class='center' href="http://bitemebouquet.tumblr.com/" ><img src='/images/PNG/tumblr.png' alt="Follow our Tumblr page!"></a>
+<a class='center' href="http://instagram.com/bitemebouquet" ><img src='/images/PNG/instagram.png' alt="Like us on Instagram!"></a>
    @yield('footer')
 </div>
 </body>
