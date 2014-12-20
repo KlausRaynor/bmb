@@ -23,6 +23,7 @@ ini_set('display_errors', 1);
 <body>
   <p>
 <a href='/'>Homepage</a> </p>
+
   <!--Error Reporting, production side -->
 @if(Session::get('flash_message'))
     <div class='flash-message'>{{ Session::get('flash_message') }}</div>
@@ -35,10 +36,6 @@ ini_set('display_errors', 1);
       <li><a href='/logout'>Log out {{ Auth::user()->email; }}</a></li>
       <li><a href='/bouquet'>All Books</a></li>
       <li><a href='/cart'>View Cart</a></li>
-      <li><a href='/book/search'>Search Books (w/ Ajax)</a></li>
-      <li><a href='/tag'>All Tags</a></li>
-      <li><a href='/book/create'>+ Add Book</a></li>
-      <li><a href='/debug/routes'>Routes</a></li>
     @else
       <div class='btn-group' role='group' aria-label='HomePage Buttons'>
         <a class='btn btn-default' href='login'>Login</a>

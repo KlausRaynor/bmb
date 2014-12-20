@@ -16,8 +16,14 @@
 
 {{ Form::open(array('url' => '/signup')) }}
 
- <p>   Email
+ <p>
+ 	Name
+ 	{{Form::text('name')}}<br><br>
+
+
+    Email
     {{ Form::text('email') }}<br><br>
+
 
     Password:
     {{ Form::password('password') }}<br><br>

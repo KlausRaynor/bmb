@@ -16,11 +16,10 @@ class CreateBouquetsTable extends Migration {
 		Schema::create('bouquets', function($table) {
 
         $table->increments('id');
-        $table->timestamps();
         $table->string('name');
         $table->integer('price');
         $table->string('image');
-        $table->string('add_to_cart');
+        $table->timestamps();
 		});
 	}
 

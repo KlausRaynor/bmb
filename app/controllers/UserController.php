@@ -43,21 +43,23 @@ class UserController extends BaseController {
 
         #new user code..
         $user = new User;
-        $user->name = Input::get('name');
-        $user->email    = Input::get('email');
+        $user->email = Input::get('email');
         $user->password = Hash::make(Input::get('password'));
+        $user->name = Input::get('name');
         try {
             $user->save();
         }
         catch (Exception $e) {
             return Redirect::to('/signup')
-                ->with('flash_message', 'Sign up failed; please try again.')
+                ->with('flash_message', 'Sign up failed... please try again.')
                 ->withInput();
         }
         # Log in
         Auth::login($user);
+
+        Session::put('name', $user->name);
        
-        return Redirect::to('/')->with('flash_message', 'Welcome to Bite Me Bouquet!');
+        return Redirect::to('/')->with('flash_message', 'Welcome to Bite Me Bouquet, '.$user->name.'!');
     }
 
     public function getLogin() {

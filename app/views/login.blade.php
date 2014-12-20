@@ -7,20 +7,24 @@
 @section('content')
 <div id='content'>
 
-<!-- PHP Form
+<!-- PHP Form-->
 
 <p>
-    {{ Form::label('email') }}
-    {{ Form::text('email') }}<br>
+{{ Form::open(array('url' => '/login')) }}
 
-    {{ Form::label('password') }} 
+    Email<br>
+    {{ Form::text('email') }}<br><br>
+
+    Password:<br>
     {{ Form::password('password') }}<br><br>
 
     {{ Form::submit('Submit') }}
-</p>
--->
 
-<!--BOOTSTRAP HORIZONTAL FORM CODE-->
+{{ Form::close() }}
+</p>
+
+
+<!--BOOTSTRAP HORIZONTAL FORM CODE
 
 {{ Form::open(array('url' => '/login')) }}
   <div class="form-group">
@@ -50,6 +54,6 @@
     </div>
   </div>
 </form>
- {{ Form::close() }}
+ {{ Form::close() }} -->
 </div>
 @stop
