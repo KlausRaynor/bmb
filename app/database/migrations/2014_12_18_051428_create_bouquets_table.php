@@ -20,6 +20,7 @@ class CreateBouquetsTable extends Migration {
         $table->integer('price');
         $table->string('image');
         $table->timestamps();
+
 		});
 	}
 
