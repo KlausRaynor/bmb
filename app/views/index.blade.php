@@ -4,9 +4,6 @@
 Bite Me Bouquet
 @stop
 
-@section('head')
-<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
-@stop
 
 @section('content')
 <div id='title'>

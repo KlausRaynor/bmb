@@ -7,6 +7,13 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 
 class User extends Eloquent implements UserInterface, RemindableInterface {
 
+	//method establishing one user to many bouquets
+
+	public function bouquet() {
+
+		return $this->hasMany('Bouquet');
+	}
+
 	use UserTrait, RemindableTrait;
 
 	/**

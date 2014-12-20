@@ -33,8 +33,9 @@ ini_set('display_errors', 1);
   <nav>
     <ul>
     @if(Auth::check())
+      <th>Welcome back, {{Auth::user()->name}}!</th>
       <li><a href='/logout'>Log out {{ Auth::user()->email; }}</a></li>
-      <li><a href='/bouquet'>All Books</a></li>
+      <li><a href='/bouquet'>Shop Bouquets</a></li>
       <li><a href='/cart'>View Cart</a></li>
     @else
       <div class='btn-group' role='group' aria-label='HomePage Buttons'>

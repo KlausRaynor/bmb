@@ -188,7 +188,7 @@ Route::get('/debug', function() {
 Route::get('/practice-creating', function() {
 
 /*
-POPULATING BOUQUET TABLE
+POPULATING BOUQUET TABLE	*/
 	#Instantiate Object
 	$bouquet = new Bouquet();
 	$bouquet->name = "Fruit Cone";
@@ -260,7 +260,7 @@ POPULATING BOUQUET TABLE
 	$bouquet10->add_to_cart = "";
 	$bouquet10->save();
 	return 'New bouquets added to your database!';
-	*/
+
 
 });
 
