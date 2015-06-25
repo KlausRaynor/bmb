@@ -1,0 +1,115 @@
+
+body {
+	padding: 0px 75px;
+	background: url(/images/purple-knit-shirt-texture.jpg);
+}
+
+* {
+		text-decoration: none;
+}
+
+h1, h2 {
+	margin: 10px;
+	text-align: center;
+	color: #FFE1F0;
+
+}
+
+#head {
+	margin: 20px 0px;
+}
+
+header li {
+	display: inline;
+}
+
+
+.colorChange {
+	opacity: 0.4;
+
+}
+
+.colorChange img {
+	border-radius: 50%;
+}
+.showMe {
+	opacity: 1;
+}
+li{
+	list-style: none;
+	padding: 2px;
+}
+ul > li {
+	display: inline;
+}
+
+[href$='.php'] {
+	color: orange;
+	font-size: 1.2em;
+}
+
+header > img {
+	width: auto;
+	height: "200";
+}
+#banner {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 10px solid #826AA3;
+	object-fit: cover;
+}
+
+#gallery {
+	background-color: #FFE1F0;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 10px 5px 5px #826AA3;
+}
+#gallery img{
+	border-radius: 5px;
+}
+
+#gallery a:link {
+	margin: 2px;
+}
+#gallery a:hover > img {
+	opacity:0.4;
+	
+}
+
+a:active{
+
+}
+
+a:visited {
+
+}
+
+footer {
+	margin-top: 30px;
+	color: #FFE1F0;
+	text-align: center;
+	font-size: 0.5em;
+}
+
+
+
+/******************/
+/*Contact.php form*/
+/******************/
+form {
+	max-width: 300px;
+}
+
+fieldset {
+	max-width: 300px;
+}
+
+label {
+	margin-top: 5px;
+}
+
+input {
+	padding-top:5px;
+}
