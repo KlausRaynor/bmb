@@ -1,26 +1,64 @@
-
+/*****************/
+/*GENERAL STYLING*/
+/*****************/
 body {
-	padding: 0px 75px;
+	margin: 0;
+	padding: 0;
 	background: url(/images/purple-knit-shirt-texture.jpg);
 }
 
-* {
-		text-decoration: none;
+a, p, h1, h2, h3, h4, h5 {
+	text-decoration: none;
+	font-family: 'Sacramento', cursive;
 }
 
-h1, h2 {
+li{
+	margin: 0 auto;
+	list-style: none;
+	display: inline;
+}
+
+#wrapper {
+	width: 800px;
+	margin: 0 auto;
+	min-height: 100%;
+	position: relative;
+}
+
+#header{
+
+}
+
+#content {
+	padding-bottom: 100px;
+}
+
+
+
+/****************/
+/*HEADER STYLING*/
+/****************/
+#topBanner, #galleryBanner {
+	font-size: 5em;
 	margin: 10px;
 	text-align: center;
 	color: #FFE1F0;
+	font-family: 'Sacramento', cursive;
 
+}
+
+#galleryBanner {
+	font-size: 4em;
 }
 
 #head {
 	margin: 20px 0px;
 }
 
-header li {
-	display: inline;
+#changer{
+	padding: 5px;
+	background-color: #FFE1F0;
+	border-radius: 10px;
 }
 
 
@@ -35,23 +73,7 @@ header li {
 .showMe {
 	opacity: 1;
 }
-li{
-	list-style: none;
-	padding: 2px;
-}
-ul > li {
-	display: inline;
-}
 
-[href$='.php'] {
-	color: orange;
-	font-size: 1.2em;
-}
-
-header > img {
-	width: auto;
-	height: "200";
-}
 #banner {
 	width: 200px;
 	height: 200px;
@@ -60,14 +82,37 @@ header > img {
 	object-fit: cover;
 }
 
+em{
+	font-size: 0.5em;
+	margin-left: 5px;
+}
+
+/*****************/
+/*CONTENT STYLING*/
+/*****************/
+
+a[href$='.php'] {
+	color: orange;
+	font-size: 2em;
+	float: right;
+	text-decoration: none;
+}
+
+body > a:visited, body > a:hover, body > a:active {
+	color: orange;
+	font-size: 2em;
+	float: right;
+	text-decoration: none;
+ }
+
 #gallery {
 	background-color: #FFE1F0;
 	border-radius: 10px;
 	padding: 20px;
-	box-shadow: 10px 5px 5px #826AA3;
 }
 #gallery img{
 	border-radius: 5px;
+	margin: 5px;
 }
 
 #gallery a:link {
@@ -78,38 +123,47 @@ header > img {
 	
 }
 
-a:active{
+/****************/
+/*FOOTER STYLING*/
+/****************/
 
-}
-
-a:visited {
-
-}
-
-footer {
-	margin-top: 30px;
-	color: #FFE1F0;
+#footer{
+	bottom: 0;
+	height: 100px;
+	left: 0;
 	text-align: center;
-	font-size: 0.5em;
+	width: 100%;
 }
-
 
 
 /******************/
 /*Contact.php form*/
 /******************/
+.contact {
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 50px;
+}
+.contact #content {
+ width: 800px;
+ margin: 0 auto;
+ min-height: 100%;
+ position: relative;
+}
+
+.contact #content> a {
+	float: left;
+}
+
+.contact #header > p {
+	font-size: 1.5em;
+	color: #FFE1F0;
+	text-align: center;
+}
+
 form {
-	max-width: 300px;
+	background-color: #FFE1F0;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 0 auto;
 }
 
-fieldset {
-	max-width: 300px;
-}
-
-label {
-	margin-top: 5px;
-}
-
-input {
-	padding-top:5px;
-}
